@@ -56,6 +56,13 @@ goBackBtn.on('click', () => {
         $('.right-wrong').empty('Wrong!').append('Wrong!');
         count -= 10;
         score -= 1;
+
+        setInterval(() => {
+            $('#horizontal-line').removeClass('hr-line');
+            $('.right-wrong').empty('Wrong!')
+
+        }, 1000)
+
         })
     }
     wrongAnswers();
@@ -64,6 +71,12 @@ goBackBtn.on('click', () => {
         $('.right-answer1').click(function() {
             $('#horizontal-line').addClass('hr-line');
             $('.right-wrong').empty('Correct!').append('Correct!');
+
+            setInterval(() => {
+                $('#horizontal-line').removeClass('hr-line');
+                $('.right-wrong').empty('Correct!')
+    
+            }, 1000)
 
             // hide question one
             $('#prompt-1').addClass('hide-question');
@@ -78,6 +91,12 @@ goBackBtn.on('click', () => {
             $('#horizontal-line').addClass('hr-line');
             $('.right-wrong').empty('Correct!').append('Correct!');
 
+            setInterval(() => {
+                $('#horizontal-line').removeClass('hr-line');
+                $('.right-wrong').empty('Correct!')
+    
+            }, 1000)
+
             // hide question two
             $('#prompt-2').addClass('hide-question');
 
@@ -90,6 +109,12 @@ goBackBtn.on('click', () => {
         $('.right-answer3').click(function() {
             $('#horizontal-line').addClass('hr-line');
             $('.right-wrong').empty('Correct!').append('Correct!');
+
+            setInterval(() => {
+                $('#horizontal-line').removeClass('hr-line');
+                $('.right-wrong').empty('Correct!')
+    
+            }, 1000)
 
             // hide question three
             $('#prompt-3').addClass('hide-question');
@@ -105,6 +130,12 @@ function rightAnswer4() {
         $('#horizontal-line').addClass('hr-line');
         $('.right-wrong').empty('Correct!').append('Correct!');
 
+        setInterval(() => {
+            $('#horizontal-line').removeClass('hr-line');
+            $('.right-wrong').empty('Correct!')
+
+        }, 1000)
+
         // hide question four 
         $('#prompt-4').addClass('hide-question');
 
@@ -118,6 +149,12 @@ function rightAnswer5() {
     $('.right-answer5').click(function() {
         $('#horizontal-line').addClass('hr-line');
         $('.right-wrong').empty('Correct!').append('Correct!');
+
+        setInterval(() => {
+            $('#horizontal-line').removeClass('hr-line');
+            $('.right-wrong').empty('Correct!')
+
+        }, 1000)
 
         // hide question five
         $('#prompt-5').addClass('hide-question');
