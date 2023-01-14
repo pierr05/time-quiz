@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="view-scores">
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="timer-text">Time: <span class="timer">59</span></div>
+    </header>
+    <main>
+        <section class="intro" id="quiz-rule">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time range.<br>Keep in mind that incorrect answers will penalize your time by ten seconds!!
+            </p>
+            <button type="button" id="start-btn">Start Quiz</button>
+        </section>
+        <section id="final-score" class="score-text hide-question">
+                <h3>All done</h3>
+                <p class="quiz-score"></p>
+                <label for="initials">Enter your initials:</label>
+                <input class="text-input" type="text" name="initials" id="initials" placeholder="AP" autocomplete="on" required>
+                <button type="submit" id="submit-btn">Submit</button>
+        </section>
+        <section class="high-score hide-question" id="high-scores">
+            <h2>High Scores</h2>
+            <p class="initials-score" id="hide-score"></p>
+            <button type="reset" id="back-btn">Go back</button> <button type="reset" id="clear-score">Clear high scores</button>
+        </section>
+        <section class="questions">
+            <div id="prompt-1" class="hide-question">
+                <h2 id="question-1">Which one of the following is a CSS framework?</h2>
+
+                <ol>
+                    <li>
+                        <p id="answer-1" class="wrong-answer"><button type="button">JavaScript</button></p>
+                    </li>
+                    <li>
+                        <p id="answer-2" class="wrong-answer"><button type="button">CDN</button></p>
+                    </li>
+                    <li>
+                        <p id="answer-3" class="right-answer1"><button type="button">BootStrap</button></p>
+                    </li>
+                    <li>
+                        <p id="answer-4" class="wrong-answer"><button type="button">Python</button></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="prompt-2" class="hide-question">
+                <h2 id="question-2">An_____is a collection of items of the same data type stored at contiguous memory locations.</h2>
+                <ol>
+                    <li>
+                        <p id="questionTwoAnswer1" class="right-answer2"><button type="button">array</button></p>
+                    </li>
+                    <li>
+                        <p id="questionTwoAnswer2" class="wrong-answer"><button type="button">object</button></p>
+                    </li>
+                    <li>
+                        <p id="questionTwoAnswer3" class="wrong-answer"><button type="button">anonymous function</button></p>
+                    </li>
+                    <li>
+                        <p id="questionTwoAnswer4" class="wrong-answer"><button type="button">function</button></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="prompt-3" class="hide-question">
+                <h2 id="question-3">Which of the following is NOT a JavaScript primitive data type?</h2>
+                <ol>
+                    <li>
+                        <p id="questionThreeAnswer1" class="wrong-answer"><button type="button">Symbol</button></p>
+                    </li>
+                    <li>
+                        <p id="questionThreeAnswer2" class="wrong-answer"><button type="button">Bigint</button></p>
+                    </li>
+                    <li>
+                        <p id="questionThreeAnswer3" class="wrong-answer"><button type="button">Null</button></p>
+                    </li>
+                    <li>
+                        <p id="questionThreeAnswer4" class="right-answer3"><button type="button">jQuery</button></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="prompt-4" class="hide-question">
+                <h2 id="question-4">Which one of the following is a JavaScript primitive data type?</h2>
+                <ol>
+                    <li>
+                        <p id="questionFourAnswer1" class="right-answer4"><button type="button">Undefined</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFourAnswer2" class="wrong-answer"><button type="button">Object</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFourAnswer3" class="wrong-answer"><button type="button">Bootstrap</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFourAnswer4" class="wrong-answer"><button type="button">Bit</button></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="prompt-5" class="hide-question">
+                <h2 id="question-5">A_______is a block of code that perform a task?</h2>
+                <ol>
+                    <li>
+                        <p id="questionFiveAnswer1" class="wrong-answer"><button type="button">Boolean</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFiveAnswer2" class="right-answer5"><button type="button">function</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFiveAnswer3" class="wrong-answer"><button type="button">string</button></p>
+                    </li>
+                    <li>
+                        <p id="questionFiveAnswer4" class="wrong-answer"><button type="button">callback</button></p>
+                    </li>
+                </ol>
+            </div>
+                <div id="horizontal-line">
+                    <p class="right-wrong"></p>
+                </div>
+                
+        </section>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
